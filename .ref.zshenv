@@ -1,0 +1,1 @@
+BREWHOME=/home/linuxbrew/.linuxbrew

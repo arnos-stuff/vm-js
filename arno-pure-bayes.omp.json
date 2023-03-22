@@ -1,0 +1,182 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+	"blocks": [
+		{ 
+		"newline": true,
+		"alignment": "left",
+		"segments": [
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": " ",
+				"type": "text"
+			},
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": "@: ",
+				"type": "text"
+			},
+			{
+				"foreground": "#3a9bf1",
+				"properties": {
+					"folder_icon": "\uf07b",
+					"root_icon": "~",
+					"mapped_locations": {
+						"\\\\wsl.localhost\\Ubuntu-20.04": "WSL-U20",
+						"\\\\wsl.localhost\\Ubuntu-18.04": "WSL-U18",
+						"\\\\wsl.localhost\\Ubuntu": "WSL-U",
+						"\\\\wsl.localhost\\Debian": "WSL-D",
+						"\\\\wsl.localhost\\kali-linux": "WSL-K",
+						"\\\\wsl.localhost\\SLES-12": "WSL-S12",
+						"\\\\wsl.localhost\\SLES-15": "WSL-S15",
+						"\\\\wsl.localhost\\OracleLinux_8_5": "WSL-ORA",
+						"\\\\wsl.localhost\\OracleLinux_7_9": "WSL-ORA"
+					}
+				},
+				"style": "plain" ,
+				"template": "<#70eeee></>{{ .PWD }}<#70eeee></>",
+				"type": "path"
+			}
+		],
+		"type": "prompt"
+	},
+	{
+		"alignment": "left",
+		"newline": true,
+		"segments": [
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": "\u007b",
+				"type": "text"
+			},
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": "\u007b",
+				"type": "text"
+			},
+			{
+				"foreground": "#bd6ee4",
+				"style": "plain",
+				"template": " <#eb27f5>@</>{{ .UserName }} ",
+				"type": "session"
+			},
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": "\u007d",
+				"type": "text"
+			},
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": "\u007d",
+				"type": "text"
+			},
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": "::",
+				"type": "text"
+			},
+			{
+				"foreground": "#3C873A",
+				"properties": {
+					"fetch_package_manager": true,
+					"npm_icon": " <#cc3a3a>\ue5fa</> ",
+					"yarn_icon": " <#348cba>\uf61a</>"
+				},
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ .Full }}<#70eeee>)</>",
+				"type": "node"
+			},
+			{
+				"foreground": "#9719df",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "python"
+			},
+			{
+				"foreground": "#ec2729",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "java"
+			},
+			{
+				"foreground": "#0d6da8",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Unsupported }} ? {{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "dotnet"
+			},
+			{
+				"foreground": "#06aad5",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "go"
+			},
+			{
+				"foreground": "#b96839",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "rust"
+			},
+			{
+				"foreground": "#0b67ac",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "dart"
+			},
+			{
+				"foreground": "#ce092f",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "angular"
+			},
+			{
+				"foreground": "#70eeee",
+				"style": "plain",
+				"template": "<#1e293b>(</>{{ if .Error }}{{ .Error }}{{ else }}Nx {{ .Full }}{{ end }}<#1e293b>)</>",
+				"type": "nx"
+			},
+			{
+				"foreground": "#359a25",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "julia"
+			},
+			{
+				"foreground": "#9c1006",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "ruby"
+			},
+			{
+				"foreground": "#5398c2",
+				"style": "plain",
+				"template": "<#70eeee>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#70eeee>)</>",
+				"type": "azfunc"
+			},
+			{
+				"foreground": "#8c05e6",
+				"style": "plain",
+				"template": " <#eb27f5>\u03BB</>v<#70eeee>.</><#eb27f5>\u03BB</><#bd6ee4>i</><#70eeee>.</> \u03C0<#70eeee>(</>\u03B8<#70eeee>|</>v<#eb27f5>(</><#bd6ee4>i</><#eb27f5>)</><#70eeee>)</>",
+				"type": "text"
+			},
+			{
+				"foreground": "#70eeee",
+				"foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+				"properties": {
+					"always_enabled": true
+				},
+				"style": "plain",
+				"template": " --> ",
+				"type": "exit"
+			}
+		],
+		"type": "prompt"
+	}
+],
+"version": 2
+}
